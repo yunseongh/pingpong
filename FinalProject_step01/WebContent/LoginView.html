@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=euc-kr" />
+	
+<SCRIPT language=javascript>
+function checkValid() {
+    var f = window.document.writeForm;
+		
+	if ( f.email.value == "" ) {
+		alert( "전자메일을 입력해 주세요." );
+		return false;
+	}
+	if ( f.school.value == "" ) {
+		alert( "학과를 입력해 주세요." );
+		return false;
+	}
+	if ( f.password.value == "" ) {
+        alert( "비밀번호를 입력해 주세요" );
+        return false;
+    }
+	if ( f.major.value == "" ) {
+        alert( "전공을 입력해 주세요." );
+        return false;
+    }
+    return true;
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+
+<!--     pstmt.setString(1, vo.getEmail());
+	        pstmt.setString(2, vo.getName());
+	        pstmt.setString(3, vo.getPassword());
+	        pstmt.setString(4, vo.getSchool());
+	        pstmt.setString(5, vo.getMajor()); -->
+	        
+<!--  로그인 창 -->
+<form name="loginForm" method="post" action="pingpong.do" onSubmit='return checkValid()'>
+	<input type="hidden" name="command" value="main">
+	<table align="center" cellpadding="5" cellspacing="2" width="600" border="1">
+		<tr>
+        	<td width="1220" height="20" colspan="2" bgcolor="#336699">
+            	<p align="center"><font color="white" size="3"><b>로그인</b></font></p>
+        	</td>
+    	</tr>
+    	<tr>
+        <td width="150" height="20" >
+            <p align="right"><b><span style="font-size:9pt;">아이디(Email)</span></b></p>
+        </td>
+        <td width="450" height="20"><b><span style="font-size:9pt;">
+		<input type=text name="loginemail" size="30"></span></b></td>
+    	</tr>
+   		 <tr>
+        <td width="150" height="20">
+            <p align="right"><b><span style="font-size:9pt;">패스워드</span></b></p>
+        </td>
+        <td width="450" height="20"><b><span style="font-size:9pt;">
+		<input type=text name="loginpassword" size="30"></span></b></td>
+   		 </tr>
+   		 
+   		 <tr>
+        	<td width="450" height="20" colspan="2" align="center"><b><span style="font-size:9pt;">
+        	<input type=submit value=로그인> 
+        	<input type=reset value=다시쓰기></span></b></td>
+    	</tr>
+    	
+	</table>
+</form>
+
+<!-- 회원가입 창 -->
+<form name="writeForm" method="post" action="pingpong.do" onSubmit='return checkValid()'>
+
+<input type="hidden" name="command" value="write">
+
+<table align="center" cellpadding="5" cellspacing="2" width="600" border="1">
+
+    <tr>
+        <td width="1220" height="20" colspan="2" bgcolor="#336699">
+            <p align="center"><font color="white" size="3"><b>회원가입</b></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="150" height="20" >
+            <p align="right"><b><span style="font-size:9pt;">아이디(Email)</span></b></p>
+        </td>
+        <td width="450" height="20"><b><span style="font-size:9pt;">
+		<input type=text name="email" size="30"></span></b></td>
+    </tr>
+    <tr>
+        <td width="150" height="20">
+            <p align="right"><b><span style="font-size:9pt;">패스워드</span></b></p>
+        </td>
+        <td width="450" height="20"><b><span style="font-size:9pt;">
+		<input type=text name="password" size="30"></span></b></td>
+    </tr>
+    <tr>
+        <td width="150" height="20">
+            <p align="right"><b><span style="font-size:9pt;">이  름</span></b></p>
+        </td>
+        <td width="450" height="20" ><b><span style="font-size:9pt;">
+		<input type=text name="name" size="50"></span></b></td>
+    </tr>
+    <tr>
+        <td width="150" height="20">
+            <p align="right"><b><span style="font-size:9pt;">전  공</span></b></p>
+        </td>
+        <td width="450" height="20" ><b><span style="font-size:9pt;">
+		<input type=text name="major" size="50"></span></b></td>
+    	</tr>
+    <tr>
+        <td width="150" height="20">
+            <p align="right"><b><span style="font-size:9pt;">학  교</span></b></p>
+        </td>
+        <td width="450" height="20" ><b><span style="font-size:9pt;">
+		<input type=text name="school" size="50"></span></b></td>
+    </tr>
+    <tr>
+        <td width="450" height="20" colspan="2" align="center"><b><span style="font-size:9pt;">
+        <input type=submit value=가입하기> 
+        <input type=reset value=취소하기></span></b></td>
+    </tr>
+</table>
+</form>
+<hr>
+<div align=right><span style="font-size:9pt;">&lt;<a href="pingpong.do?command=list">리스트로 돌아가기</a>&gt;</span></div>
+</BODY>
+</HTML>
