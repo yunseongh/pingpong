@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>WEB</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link href="WEB.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript"> 
+		function doSubmit() {
+			if(boardFrm.id.value == "") {
+				alert("아이디를 입력해주세요.");
+				return;
+			}
+			if(boardFrm.pw.value == "") {
+				alert("비밀번호을 입력해주세요.");
+				return;
+			}
+			if(boardFrm.name.value == "") {
+				alert("이름을 입력해주세요.");
+				return;
+			}
+			
+			boardFrm.submit()
+		}
+	</script>
+	
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<!-- Save for Web Slices (WEB.psd) -->
+<div id="frame"width="1346" height="3178" border="0" cellpadding="0" cellspacing="0">
+<div id="Top"><img src="images/WEB_01.png" width="342" height="100"><a href="#m_home"><img src="images/WEB_02.png" width="104" height="100"></a><a href="#m_about"><img src="images/WEB_03.png" width="98" height="100"></a><a href="#m_how"><img src="images/WEB_04.png" width="148" height="100"></a><img src="images/WEB_05.png" width="100" height="100"><img src="images/WEB_06.png" width="112" height="100">        
+    <input name="ID" type="text" class="input_id"><input name="PW" type="password" class="input_pw"><input name="login_b" type="button" class="login_b">
+</div>
+<div id="body">
+  <div id="home">
+    <a name="m_home">&nbsp;</a><img id="logo_p" class="animated bounceInUp" src="images/HOME/logo_01.png" width="104" height="150"><img id="logo_ing" class="animated bounceInUp" src="images/HOME/logo_02.png" width="179" height="83"><img id="logo_ong" class="animated bounceInUp" src="images/HOME/logo_03.png" width="179" height="70"> 
+   <form name="boardFrm" action="writeProc.do" method="post">
+ 	<div class="animated bounceInRight" > 
+    <input name="id" class="join_email" type="text">
+    <input name="pw" class="join_name" type="password">
+    <input name="name" class="join_pw" type="text">
+    <input name="major" class="join_school" type="text">
+    <input name="school" class="join_major" type="text">
+    <input type="button" class="join_b" onclick="doSubmit()">
+    </div>
+    </form>
+  </div>
+    <div id="about">
+    <a name="m_about">&nbsp;</a> </div>
+    <div id="how">
+    <a name="m_how">&nbsp;&nbsp;</a>
+  </div>
+ </div>
+<!-- End Save for Web Slices -->
+
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- End Save for Web Slices -->
+</body>
+</html>

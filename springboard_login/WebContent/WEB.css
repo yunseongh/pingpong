@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+#Top{
+
+	background-color:#1a1a1a;
+	width:1413px;
+	position:fixed;
+	z-index:1;
+}
+
+#home{
+	background:url(images/HOME/HOME_bg.png) repeat;
+	height:660;
+	position:relative;
+    width:1413px;
+}
+#about{
+	background:url(images/WEB_11.png)  no-repeat;
+	height:560;
+	position:relative;
+    width:1413px;
+}
+#how{
+	background:url(images/WEB_12.png) no-repeat;
+	height:560;
+	position:relative;
+    width:1413px;
+}
+
+#logo_p{
+	position:absolute;
+	top:300px;
+	left:300px;
+}
+
+#logo_ing{
+	position:absolute;
+	top:300px;
+	left:400px;
+}
+
+#logo_ong{
+	position:absolute;
+	top:380px;
+	left:370px;
+}
+
+
+.input_id{
+	border: 0px solid #444444;
+  	height:23px;
+	width:112px;
+    background:url(images/MENU_ID.png) no-repeat right top; 
+    color:#fff; 
+    padding-left:20px; 
+    font-size:10px;
+	position:absolute;
+	top:60px;
+	right:300px;
+}
+
+.input_pw{
+	border: 0px solid #444444;
+ 	height:23px;
+	width:154px;
+	background:url(images/MENU_PW.png) no-repeat right top;
+	color:#fff;
+	padding-left:60px;
+	font-size:10px;
+	position:absolute;
+	top:60px;
+	right:130px;
+}
+
+.login_b{
+	border: 0px solid #444444;
+ 	height:25px;
+    width:25px;
+	background:url(images/HOME/login_button.png) no-repeat right top;
+	color:#333;
+	padding-left:20px;
+	padding-top:8px;
+	font-size:20px;
+	position:absolute;
+	top:60px;
+	right:95px;
+}
+
+
+
+.join_email{
+	border: 0px solid #444444;
+    height:65px;
+    width:310px;
+	background:url(images/HOME/LOGIN_03.png) no-repeat right top;
+	color:#333;
+	padding-left:20px;
+	padding-top:8px;
+	font-size:20px;
+	position:absolute;
+	top:200px;
+	right:200px;
+}
+.join_name{
+	border: 0px solid #444444;
+    height:65px;
+    width:310px;
+	background:url(images/HOME/LOGIN_05.png) no-repeat right top;
+	color:#333;
+	padding-left:20px;
+	padding-top:8px;
+	font-size:20px;
+	position:absolute;
+	top:260px;
+	right:200px;
+}
+.join_pw{
+	border: 0px solid #444444;
+    height:65px;
+    width:310px;
+	background:url(images/HOME/LOGIN_06.png) no-repeat right top;
+	color:#333;
+	padding-left:20px;
+	padding-top:8px;
+	font-size:20px;
+	position:absolute;
+	top:320px;
+	right:200px;
+}
+.join_school{
+	border: 0px solid #444444;
+    height:65px;
+    width:310px;
+	background:url(images/HOME/LOGIN_07.png) no-repeat right top;
+	color:#333;
+	padding-left:20px;
+	padding-top:8px;
+	font-size:20px;
+	position:absolute;
+	top:380px;
+	right:200px;
+}
+.join_major{
+	border: 0px solid #444444;
+ 	height:65px;
+    width:310px;
+	background:url(images/HOME/LOGIN_08.png) no-repeat right top;
+	color:#333;
+	padding-left:20px;
+	padding-top:8px;
+	font-size:20px;
+	position:absolute;
+	top:440px;
+	right:200px;
+}
+
+.join_b{
+	border: 0px solid #444444;
+ 	height:25px;
+    width:80px;
+	background:url(images/HOME/join_button.png) no-repeat right top;
+	color:#333;
+	padding-left:20px;
+	padding-top:8px;
+	font-size:20px;
+	position:absolute;
+	top:510px;
+	right:200px;
+}
+
